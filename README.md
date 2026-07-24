@@ -33,10 +33,42 @@ portfolio/
 
 **圖片建議直接跟 Wix 後台或原始設計檔要原始解析度的檔案**，不要用截圖裁切，畫質才不會糊掉。
 
-## 各分類要連到子頁面？
+## 分類子頁面（已建立）
 
-目前每個分類 banner 的 `href="#"` 只是佔位。如果你想像 Wix 版一樣，每個分類點進去有獨立頁面顯示該類所有作品，
-之後可以請我幫你建立 `ai-ad.html`、`game-ad.html` 等子頁面，把連結改過去即可。
+現在有五個獨立頁面，首頁的分類 banner 和導覽列都已經連過去了：
+
+- `ai-ad.html` — AI創作廣告
+- `game-ad.html` — 遊戲廣告
+- `product-ad.html` — 商品廣告
+- `logo-anim.html` — Logo動態
+- `3d-anim.html` — 3D動畫
+
+每個子頁面預設放了 4 個作品格子（`.work-item`），要換成你真正的影片，打開該檔案找到這段：
+
+```html
+<div class="work-item" data-embed="" data-title="作品 01">
+  <div class="placeholder-box" style="position:absolute;inset:0;"><span>作品縮圖 01</span></div>
+  <div class="work-item-play"></div>
+  <div class="work-item-overlay"><span class="work-item-title">作品名稱 01</span></div>
+</div>
+```
+
+只要改三個地方：
+
+1. **`data-embed`**：填入影片的「嵌入網址」（不是一般網址）
+   - YouTube：`https://www.youtube.com/embed/影片ID`（影片ID 在一般網址 `youtube.com/watch?v=這一段` 裡）
+   - Dailymotion：`https://www.dailymotion.com/embed/video/影片ID`
+2. **`data-title`**：換成作品的真正名稱
+3. **縮圖**：把 `placeholder-box` 那個 `<div>` 換成
+   ```html
+   <img src="images/你的縮圖.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+   ```
+   YouTube 影片也可以直接用自動縮圖網址，不用自己截圖：
+   `https://img.youtube.com/vi/影片ID/hqdefault.jpg`
+
+點擊格子會跳出播放視窗直接播放，不會整個換頁。
+
+如果作品數量不是剛好 4 個，直接複製貼上 `.work-item` 整塊、或刪減多餘的即可，格線會自動排列。
 
 ## 顏色微調
 
