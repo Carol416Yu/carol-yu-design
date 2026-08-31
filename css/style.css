@@ -172,8 +172,8 @@ a { color: inherit; text-decoration: none; }
 .hero-text {
   position: relative;
   z-index: 1;
-  width: 34%;
-  max-width: 460px;
+  width: 40%;
+  max-width: 520px;
 }
 .hero-text h1 {
   font-family: var(--font-sans);
@@ -221,6 +221,11 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: filter 0.3s ease;   /* 讓變暗的過程平滑 */
+}
+
+.category-banner:hover .banner-media {
+  filter: brightness(0.55);       /* 數字越小越暗，1 是原本亮度 */
 }
 
 .category-banner.dark { background: repeating-linear-gradient(135deg,#111,#111 10px,#1c1c1c 10px,#1c1c1c 20px); color: #777; }
