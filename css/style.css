@@ -468,6 +468,7 @@ a:focus-visible, button:focus-visible {
   flex-direction: column;
   gap: 24px;
   padding: 0 3vw 50px;
+  border-radius: 22px 0 0 22px;
 }
 .feature-item {
   display: grid;
