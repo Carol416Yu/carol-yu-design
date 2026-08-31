@@ -472,7 +472,7 @@ a:focus-visible, button:focus-visible {
 .feature-item {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  border-radius: 22px 0 0 22px;
+  border-radius: 0 22px 22px 0;
   overflow: hidden;
 }
 .feature-info {
