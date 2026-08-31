@@ -305,6 +305,7 @@ a { color: inherit; text-decoration: none; }
 .contact-photo {
   border-radius: 0 22px 22px 0;
   aspect-ratio: 4 / 3;
+  overflow: hidden;   /* 只要是超出 .contact-photo 這個框（包含圓角以外的部分）的內容，統統裁掉不顯示 */
 }
 
 /* ============================================
