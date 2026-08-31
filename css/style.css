@@ -106,7 +106,7 @@ a { color: inherit; text-decoration: none; }
 @keyframes heroDrop {
   0%   { transform: translateY(-160%); opacity: 0; }
   60%  { transform: translateY(6%);    opacity: 1; }
-  80%  { transform: translateY(-3%); }
+  80%  { transform: translateY(-4%); }
   100% { transform: translateY(0%);   opacity: 1; }
 }
 
@@ -116,8 +116,8 @@ a { color: inherit; text-decoration: none; }
   top: var(--y);
   --r: 0deg;   /* 預設角度 */
   transform: translate(-50%, -50%) rotate(var(--r));
-  width: 88px;
-  height: 88px;
+  width: 92px;
+  height: 92px;
   border-radius: 16px;
   display: flex;
   align-items: center;
