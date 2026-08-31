@@ -460,3 +460,79 @@ a:focus-visible, button:focus-visible {
   outline: 2px solid var(--ink-brown-2);
   outline-offset: 3px;
 }
+/* ============================================
+   精選作品（大卡片：影片 + 說明）
+   ============================================ */
+.featured-works {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 3vw 50px;
+}
+.feature-item {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.feature-info {
+  background: linear-gradient(135deg, #8b7968, #6d5c4d);
+  color: #f7f2ea;
+  padding: 36px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.feature-info h3 { font-size: clamp(22px, 2.4vw, 30px); font-weight: 900; }
+.feature-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.feature-tools-label { font-size: 13px; color: #dcccb8; margin-right: 4px; }
+.tool-chip {
+  width: 34px; height: 34px; border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.tool-ps { background: linear-gradient(135deg,#3dc2ff,#0060b0); }
+.tool-ae { background: linear-gradient(135deg,#9a7bff,#4b1e9e); }
+.tool-pr { background: linear-gradient(135deg,#c78bff,#5a1e9e); }
+.tool-ai { background: linear-gradient(135deg,#ff9a3c,#e8720a); }
+.tool-kl { background: linear-gradient(135deg,#5db8ff,#2f8fe0); }
+.tool-gr { background: linear-gradient(135deg,#8a8a8a,#4a4a4a); }
+
+.feature-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ecdfd0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: pre-line;
+}
+.feature-desc.expanded { -webkit-line-clamp: unset; }
+.feature-toggle {
+  align-self: flex-start;
+  background: none; border: none;
+  color: #fff; text-decoration: underline;
+  font-size: 13px; cursor: pointer; padding: 0;
+  font-family: var(--font-sans);
+}
+.feature-toggle:hover { color: var(--bg-warm); }
+
+@media (max-width: 780px) {
+  .feature-item { grid-template-columns: 1fr; }
+}
+
+.section-label {
+  padding: 10px 3vw 20px;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--text-grey-lt);
+}
+
+/* 把「更多作品」格線改成四欄（原本是自動排列，這裡改成固定 4 欄，
+   因為寫在檔案後面、選擇器相同，這條會蓋過前面舊的 .work-grid 設定） */
+.work-grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) { .work-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .work-grid { grid-template-columns: 1fr; } }
