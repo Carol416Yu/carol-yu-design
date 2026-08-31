@@ -107,8 +107,8 @@ a { color: inherit; text-decoration: none; }
   left: var(--x);
   top: var(--y);
   transform: translate(-50%, -50%);
-  width: 96px;
-  height: 96px;
+  width: 76px;
+  height: 76px;
   border-radius: 16px;
   display: flex;
   align-items: center;
