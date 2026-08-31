@@ -468,13 +468,14 @@ a:focus-visible, button:focus-visible {
   flex-direction: column;
   gap: 24px;
   padding: 0 3vw 50px;
-  border-radius: 22px 0 0 22px;
 }
 .feature-item {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  border-radius: 0 22px 22px 0;
-  overflow: hidden;
+}
+.feature-video {
+  border-radius: 18px 0 0 18px;   /* 左上、左下圓角，右上、右下直角 */
+  overflow: hidden;                /* 讓裡面的縮圖跟著裁成圓角 */
 }
 .feature-info {
   background: linear-gradient(135deg, #8b7968, #6d5c4d);
@@ -484,6 +485,7 @@ a:focus-visible, button:focus-visible {
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  border-radius: 0 22px 22px 0;
 }
 .feature-info h3 { font-size: clamp(28px, 2.4vw, 30px); font-weight: 700; }
 .feature-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
