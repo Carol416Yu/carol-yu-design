@@ -211,7 +211,7 @@ a { color: inherit; text-decoration: none; }
   aspect-ratio: 16 / 9;
   max-height: 640px;
   border-radius: 22px;
-  margin-bottom: 24px;
+  margin-bottom: 42px;
   overflow: hidden;
 }
 
@@ -295,7 +295,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
 }
 .contact-card h2 { font-size: 30px; font-weight: 700; margin-bottom: 6px; }
-.contact-en { font-size: 14px; color: #d8c6b0; margin-bottom: 34px; }
+.contact-en { font-size: 14px; color: #d8c6b0; margin-bottom: 54px; }
 .contact-info { list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 15px; }
 .contact-info a { border-bottom: 1px solid transparent; }
 .contact-info a:hover { border-color: #f4efe7; }
