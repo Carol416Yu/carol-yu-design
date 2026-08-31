@@ -474,7 +474,7 @@ a:focus-visible, button:focus-visible {
   grid-template-columns: 1.1fr 1fr;
 }
 .feature-video {
-  border-radius: 18px 0 0 18px;   /* 左上、左下圓角，右上、右下直角 */
+  border-radius: 22px 0 0 22px;   /* 左上、左下圓角，右上、右下直角 */
   overflow: hidden;                /* 讓裡面的縮圖跟著裁成圓角 */
 }
 .feature-info {
