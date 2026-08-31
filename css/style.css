@@ -472,7 +472,7 @@ a:focus-visible, button:focus-visible {
 .feature-item {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  border-radius: 18px;
+  border-radius: 22px 0 0 22px;
   overflow: hidden;
 }
 .feature-info {
@@ -484,7 +484,7 @@ a:focus-visible, button:focus-visible {
   justify-content: center;
   gap: 16px;
 }
-.feature-info h3 { font-size: clamp(22px, 2.4vw, 30px); font-weight: 900; }
+.feature-info h3 { font-size: clamp(28px, 2.4vw, 30px); font-weight: 700; }
 .feature-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .feature-tools-label { font-size: 13px; color: #dcccb8; margin-right: 4px; }
 .tool-chip {
