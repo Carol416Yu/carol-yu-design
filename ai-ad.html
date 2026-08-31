@@ -30,6 +30,63 @@
     <p class="page-en">AI AD</p>
   </header>
 
+  <!-- ===================== 精選作品（大卡片） ===================== -->
+  <section class="featured-works">
+
+    <!--
+      精選作品卡片，每張都是「影片 + 說明」
+      複製整個 .feature-item 區塊即可新增更多精選作品
+    -->
+    <article class="feature-item">
+      <div class="work-item feature-video" data-embed="" data-title="爆爆王 - 丟最後一次水球">
+        <div class="placeholder-box" style="position:absolute;inset:0;">
+          <span>影片縮圖<br><small>換成 YouTube/Dailymotion 縮圖或封面圖</small></span>
+        </div>
+        <div class="work-item-play"></div>
+      </div>
+      <div class="feature-info">
+        <h3>爆爆王 - 丟最後一次水球</h3>
+        <div class="feature-tools">
+          <span class="feature-tools-label">使用工具：</span>
+          <span class="tool-chip tool-ps">Ps</span>
+          <span class="tool-chip tool-ae">Ae</span>
+          <span class="tool-chip tool-kl">Kl</span>
+        </div>
+        <p class="feature-desc">使用 Grok、Kling 將遊戲角色生成動態。
+使用 PS 修補 AI 生成動畫的破綻畫面。
+使用 AE 製作爆爆王視覺字體。
+（這段換成你自己的作品說明文字，換行就會照這樣分段顯示）</p>
+        <button class="feature-toggle" type="button">展開</button>
+      </div>
+    </article>
+
+    <article class="feature-item">
+      <div class="work-item feature-video" data-embed="" data-title="救世者之樹M - 前男友復仇爽劇">
+        <div class="placeholder-box" style="position:absolute;inset:0;">
+          <span>影片縮圖 02</span>
+        </div>
+        <div class="work-item-play"></div>
+      </div>
+      <div class="feature-info">
+        <h3>救世者之樹M - 前男友復仇爽劇</h3>
+        <div class="feature-tools">
+          <span class="feature-tools-label">使用工具：</span>
+          <span class="tool-chip tool-ps">Ps</span>
+          <span class="tool-chip tool-ae">Ae</span>
+          <span class="tool-chip tool-ai">Ai</span>
+        </div>
+        <p class="feature-desc">使用 Kling 將遊戲角色轉為動畫風格。
+使用 PS 將角色與背景稍加後製。
+將角色情境圖片與 prompt 丟進 Grok 生成劇情動畫。
+（這段換成你自己的作品說明文字）</p>
+        <button class="feature-toggle" type="button">展開</button>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ===================== 其他作品（四欄格線） ===================== -->
+  <p class="section-label">更多作品 MORE WORKS</p>
   <main class="work-grid">
     <!--
       每個 .work-item 是一支影片：
@@ -37,18 +94,8 @@
          YouTube： https://www.youtube.com/embed/影片ID
          Dailymotion： https://www.dailymotion.com/embed/video/影片ID
       2) data-title 換成作品名稱
-      3) 裡面的 placeholder-box 換成 <img src="images/縮圖.jpg" style="width:100%;height:100%;object-fit:cover;">
+      3) placeholder-box 換成 <img src="images/縮圖.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
     -->
-    <div class="work-item" data-embed="https://www.youtube.com/embed/A8hWjO4dxpM" data-title="救世者之樹M - AI生成 前男友復仇爽劇">
-      <img src="images/救世者之樹M - AI生成 前男友復仇爽劇_封面圖_1200X628.jpg" style="width:100%;height:100%;object-fit:cover;">
-      <div class="work-item-play"></div>
-      <div class="work-item-overlay"><span class="work-item-title">作品名稱 01</span></div>
-    </div>
-    <div class="work-item" data-embed="" data-title="作品 02">
-      <div class="placeholder-box" style="position:absolute;inset:0;"><span>作品縮圖 02</span></div>
-      <div class="work-item-play"></div>
-      <div class="work-item-overlay"><span class="work-item-title">作品名稱 02</span></div>
-    </div>
     <div class="work-item" data-embed="" data-title="作品 03">
       <div class="placeholder-box" style="position:absolute;inset:0;"><span>作品縮圖 03</span></div>
       <div class="work-item-play"></div>
@@ -58,6 +105,16 @@
       <div class="placeholder-box" style="position:absolute;inset:0;"><span>作品縮圖 04</span></div>
       <div class="work-item-play"></div>
       <div class="work-item-overlay"><span class="work-item-title">作品名稱 04</span></div>
+    </div>
+    <div class="work-item" data-embed="" data-title="作品 05">
+      <div class="placeholder-box" style="position:absolute;inset:0;"><span>作品縮圖 05</span></div>
+      <div class="work-item-play"></div>
+      <div class="work-item-overlay"><span class="work-item-title">作品名稱 05</span></div>
+    </div>
+    <div class="work-item" data-embed="" data-title="作品 06">
+      <div class="placeholder-box" style="position:absolute;inset:0;"><span>作品縮圖 06</span></div>
+      <div class="work-item-play"></div>
+      <div class="work-item-overlay"><span class="work-item-title">作品名稱 06</span></div>
     </div>
   </main>
 
