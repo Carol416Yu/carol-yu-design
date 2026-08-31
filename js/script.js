@@ -49,3 +49,11 @@ if (lightbox) {
     if (e.key === 'Escape') closeLightbox();
   });
 }
+// 精選作品說明文字：展開/收合
+document.querySelectorAll('.feature-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const desc = btn.previousElementSibling;
+    desc.classList.toggle('expanded');
+    btn.textContent = desc.classList.contains('expanded') ? '收合' : '展開';
+  });
+});
