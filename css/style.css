@@ -451,6 +451,17 @@ a { color: inherit; text-decoration: none; }
   .contact { grid-template-columns: 1fr; }
   .contact-card  { border-radius: 22px 22px 0 0; }  /* 疊在上面：改成上面兩角圓 */
   .contact-photo { border-radius: 0 0 22px 22px; }  /* 疊在下面：改成下面兩角圓 */
+   
+  /* 新增：手機版圖示縮小 */
+  .tool-icon { width: 48px; height: 48px; font-size: 15px; }
+  .icon-blender { font-size: 20px; }
+  .deco-bulb { font-size: 26px; }
+  /* 新增：手機版文字大小調整 */
+  .hero-text h1 { font-size: 40px; line-height: 1.15; }
+  .hero-en { font-size: 12px; letter-spacing: 0.2em; }
+  .hero-tags { font-size: 14px; }
+  body { line-height: 1.7; }
+   
   .nav-links {
     position: fixed;
     top: 64px; left: 0; right: 0;
