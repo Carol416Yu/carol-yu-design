@@ -449,6 +449,8 @@ a { color: inherit; text-decoration: none; }
   .hero-text { text-align: center; }
   .hero-tags { justify-content: center; }
   .contact { grid-template-columns: 1fr; }
+  .contact-card  { border-radius: 22px 22px 0 0; }  /* 疊在上面：改成上面兩角圓 */
+  .contact-photo { border-radius: 0 0 22px 22px; }  /* 疊在下面：改成下面兩角圓 */
   .nav-links {
     position: fixed;
     top: 64px; left: 0; right: 0;
