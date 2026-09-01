@@ -510,7 +510,7 @@ a:focus-visible, button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   border-radius: 0 22px 22px 0;
 }
 .feature-info h3 { font-size: clamp(28px, 2.4vw, 30px); font-weight: 700; }
