@@ -26,15 +26,24 @@ if (lightbox) {
   const lightboxClose = document.getElementById('lightboxClose');
 
   document.querySelectorAll('.work-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const embedUrl = item.dataset.embed;
-      const title = item.dataset.title || '';
-      if (!embedUrl) return; // 還沒填嵌入網址就先不開啟
+  item.addEventListener('click', () => {
+    const embedUrl = item.dataset.embed;
+    const imageUrl = item.dataset.image;
+    const title = item.dataset.title || '';
+
+    if (embedUrl) {
       videoWrap.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
-      lightboxTitle.textContent = title;
-      lightbox.classList.add('active');
-    });
+    } else if (imageUrl) {
+      videoWrap.innerHTML = `<img src="${imageUrl}" alt=""
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000;">`;
+    } else {
+      return; // 兩個都沒填就不開燈箱
+    }
+
+    lightboxTitle.textContent = title;
+    lightbox.classList.add('active');
   });
+});
 
   function closeLightbox() {
     lightbox.classList.remove('active');
