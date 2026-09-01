@@ -387,6 +387,19 @@ a { color: inherit; text-decoration: none; }
   opacity: 0;
   transition: opacity 0.25s, transform 0.25s;
 }
+.work-item-zoom {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity 0.25s, transform 0.25s;
+}
+.work-item:hover .work-item-zoom { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.work-item-zoom::after {
+  content: '🔍';
+  font-size: 16px;
+}
 .work-item:hover .work-item-play { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 .work-item-play::after {
   content: '';
