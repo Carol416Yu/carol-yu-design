@@ -538,6 +538,8 @@ a:focus-visible, button:focus-visible {
 
 @media (max-width: 780px) {
   .feature-item { grid-template-columns: 1fr; }
+  .feature-video { border-radius: 18px 18px 0 0; }  /* 疊在上面：改成上面兩角圓 */
+  .feature-info  { border-radius: 0 0 18px 18px; }  /* 疊在下面：改成下面兩角圓 */
 }
 
 .section-label {
